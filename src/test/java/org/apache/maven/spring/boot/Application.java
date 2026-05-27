@@ -17,7 +17,7 @@ package org.apache.maven.spring.boot;
 
 import java.io.File;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import org.apache.maven.spring.boot.ext.MavenClientTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
