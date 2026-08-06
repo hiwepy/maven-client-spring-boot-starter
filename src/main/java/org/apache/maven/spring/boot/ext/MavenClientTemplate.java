@@ -1,5 +1,9 @@
 /*
+<<<<<<< Updated upstream
  * Copyright (c) 2018, vindell (https://github.com/vindell).
+=======
+ * Copyright (c) 2018, hiwepy (https://github.com/easy-4-java).
+>>>>>>> Stashed changes
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -91,7 +95,11 @@ import com.google.common.collect.Iterables;
  * 	<p>4、从远程仓库下载构件</p>
  * 	<p>5、安装指定构件到本地仓库</p>
  * 	<p>6、发布本地构件到远程仓库</p>
+<<<<<<< Updated upstream
  * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+ * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
  */
 public class MavenClientTemplate {
 
@@ -184,7 +192,11 @@ public class MavenClientTemplate {
 	/**
 	 * get ArtifactResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -201,7 +213,11 @@ public class MavenClientTemplate {
 	/**
 	 * get ArtifactResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -220,7 +236,11 @@ public class MavenClientTemplate {
 	/**
 	 * get ArtifactResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -240,7 +260,11 @@ public class MavenClientTemplate {
 	/**
 	 * get ArtifactResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -262,7 +286,11 @@ public class MavenClientTemplate {
 	/**
 	 * get ArtifactResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link ArtifactResult} representing the resolved artifact in the
 	 *         local repository
@@ -301,7 +329,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<ArtifactResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -317,7 +349,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<ArtifactResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -336,7 +372,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<ArtifactResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -356,7 +396,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<ArtifactResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -432,7 +476,11 @@ public class MavenClientTemplate {
 	/**
 	 * get DependencyResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -449,7 +497,11 @@ public class MavenClientTemplate {
 	/**
 	 * get DependencyResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -468,7 +520,11 @@ public class MavenClientTemplate {
 	/**
 	 * get DependencyResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -488,7 +544,11 @@ public class MavenClientTemplate {
 	/**
 	 * get DependencyResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -510,7 +570,11 @@ public class MavenClientTemplate {
 	/**
 	 * get DependencyResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link DependencyResult} representing the resolved artifact in the
 	 *         local repository
@@ -553,7 +617,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<MetadataResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -570,7 +638,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<MetadataResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -589,7 +661,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<MetadataResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -609,7 +685,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<MetadataResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -631,7 +711,11 @@ public class MavenClientTemplate {
 	/**
 	 * get List<MetadataResult>
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link List<MetadataResult>} representing the resolved artifact in
 	 *         the local repository
@@ -675,7 +759,11 @@ public class MavenClientTemplate {
 	 * {@link MavenProperties#resolvePom} flag is <code>true</code>, the POM is also
 	 * resolved and cached.
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -695,7 +783,11 @@ public class MavenClientTemplate {
 	 * {@link MavenProperties#resolvePom} flag is <code>true</code>, the POM is also
 	 * resolved and cached.
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -718,7 +810,11 @@ public class MavenClientTemplate {
 	 * {@link MavenProperties#resolvePom} flag is <code>true</code>, the POM is also
 	 * resolved and cached.
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -742,7 +838,11 @@ public class MavenClientTemplate {
 	 * {@link MavenProperties#resolvePom} flag is <code>true</code>, the POM is also
 	 * resolved and cached.
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -826,7 +926,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -843,7 +947,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -862,7 +970,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -882,7 +994,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -904,7 +1020,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link VersionResult} representing the resolved artifact in the
 	 *         local repository
@@ -943,7 +1063,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionRangeResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
 	 *                    must not be {@code null}.
@@ -960,7 +1084,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionRangeResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -979,7 +1107,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionRangeResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -999,7 +1131,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionRangeResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
 	 *                   {@code null}.
@@ -1021,7 +1157,11 @@ public class MavenClientTemplate {
 	/**
 	 * get VersionRangeResult
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link VersionRangeResult} representing the resolved artifact in
 	 *         the local repository
@@ -1063,7 +1203,11 @@ public class MavenClientTemplate {
 	/**
 	 * get last version
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link Version} representing the resolved artifact in the local
 	 *         repository
@@ -1087,7 +1231,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path        The file to install.
 	 * @param coordinates The artifact coordinates in the format
 	 *                    {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
@@ -1105,7 +1253,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path       The file to install.
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
@@ -1126,7 +1278,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path       The file to install.
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
@@ -1148,7 +1304,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path       The file to install.
 	 * @param groupId    The group identifier of the artifact, may be {@code null}.
 	 * @param artifactId The artifact identifier of the artifact, may be
@@ -1171,7 +1331,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path     The file to install.
 	 * @param resource the {@link MavenResource} representing the artifact
 	 * @return a {@link InstallResult} representing the installed artifact in the
@@ -1190,7 +1354,11 @@ public class MavenClientTemplate {
 	/**
 	 * install artifacts to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param artifacts The artifact to install.
 	 * @return a {@link InstallResult} representing the installed artifact in the
 	 *         local repository
@@ -1212,7 +1380,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path         The file to install.
 	 * @param coordinates  The artifact coordinates in the format
 	 *                     {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>},
@@ -1238,7 +1410,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path         The file to install.
 	 * @param groupId      The group identifier of the artifact, may be
 	 *                     {@code null}.
@@ -1265,7 +1441,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path         The file to install.
 	 * @param groupId      The group identifier of the artifact, may be
 	 *                     {@code null}.
@@ -1293,7 +1473,11 @@ public class MavenClientTemplate {
 	/**
 	 * install file to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param path         The file to install.
 	 * @param groupId      The group identifier of the artifact, may be
 	 *                     {@code null}.
@@ -1322,7 +1506,11 @@ public class MavenClientTemplate {
 	/**
 	 * install artifacts to maven repository
 	 * 
+<<<<<<< Updated upstream
 	 * @author ： <a href="https://github.com/vindell">vindell</a>
+=======
+	 * @author ： <a href="https://github.com/easy-4-java">hiwepy</a>
+>>>>>>> Stashed changes
 	 * @param repository The repository to deploy.
 	 * @param artifacts  The artifact to install.
 	 * @return a {@link DeployResult} representing the deployed artifact in the
