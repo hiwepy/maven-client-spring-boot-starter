@@ -45,7 +45,7 @@ import org.springframework.cloud.deployer.resource.maven.MavenResource;
 /**
  * TODO
  * 
- * @author ： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class RepositorySystemUtils {
 
