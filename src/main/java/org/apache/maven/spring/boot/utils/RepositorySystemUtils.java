@@ -25,14 +25,17 @@ import org.eclipse.aether.artifact.Artifact;
 import org.eclipse.aether.artifact.DefaultArtifact;
 import org.eclipse.aether.connector.basic.BasicRepositoryConnectorFactory;
 import org.eclipse.aether.graph.Dependency;
-import org.eclipse.aether.impl.DefaultServiceLocator;
+import org.eclipse.aether.impl.*;
+import org.eclipse.aether.internal.impl.DefaultRepositorySystem;
 import org.eclipse.aether.repository.Authentication;
 import org.eclipse.aether.repository.AuthenticationContext;
 import org.eclipse.aether.repository.AuthenticationDigest;
 import org.eclipse.aether.repository.LocalRepository;
 import org.eclipse.aether.repository.Proxy;
+import org.eclipse.aether.spi.artifact.decorator.ArtifactDecoratorFactory;
 import org.eclipse.aether.spi.connector.RepositoryConnectorFactory;
 import org.eclipse.aether.spi.connector.transport.TransporterFactory;
+import org.eclipse.aether.spi.synccontext.SyncContextFactory;
 import org.eclipse.aether.transport.file.FileTransporterFactory;
 import org.eclipse.aether.transport.http.HttpTransporterFactory;
 import org.eclipse.aether.util.repository.DefaultProxySelector;
@@ -42,7 +45,7 @@ import org.springframework.cloud.deployer.resource.maven.MavenResource;
 /**
  * TODO
  * 
- * @author ： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class RepositorySystemUtils {
 
@@ -131,34 +134,6 @@ public class RepositorySystemUtils {
 	}
 
 
-	/*
-	 * Aether's components implement {@link org.eclipse.aether.spi.locator.Service} to ease manual wiring.
-	 * Using the prepopulated {@link DefaultServiceLocator}, we need to register the repository connector
-	 * and transporter factories
-	 */
-	@SuppressWarnings("unchecked")
-	public static RepositorySystem newRepositorySystem() {
-		
-		DefaultServiceLocator locator = MavenRepositorySystemUtils.newServiceLocator();
-		locator.addService(RepositoryConnectorFactory.class, BasicRepositoryConnectorFactory.class);
-		locator.addService(TransporterFactory.class, FileTransporterFactory.class);
-		locator.addService(TransporterFactory.class, HttpTransporterFactory.class);
-		try {
-			Class<TransporterFactory> wagonTransporterFactory = (Class<TransporterFactory>) Class
-					.forName("org.eclipse.aether.transport.wagon.WagonTransporterFactory");
-			locator.addService(TransporterFactory.class, wagonTransporterFactory);
-		} catch (Exception e) {
-			// ignore
-		}
-		locator.setErrorHandler(new DefaultServiceLocator.ErrorHandler() {
-			@Override
-			public void serviceCreationFailed(Class<?> type, Class<?> impl, Throwable exception) {
-				throw new RuntimeException(exception);
-			}
-		});
-		return locator.getService(RepositorySystem.class);
-	}
-	
 	public static Dependency createDependencyRoot(MavenResource resource) {
         Artifact artifact = null;
         if (resource.getClassifier() == null) {
