@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConditionalOnClass({ LocalRepository.class, RepositoryConnectorFactory.class, FileTransporterFactory.class, HttpTransporterFactory.class })
 @EnableConfigurationProperties({ MavenClientProperties.class })
-/**\n * Auto-configuration for Maven client operations.\n *\n * @author [@Loong Wan](https://github.com/loong10k)\n * @since 1.0.0\n */
+/**\n * Auto-configuration for Maven client operations.\n *\n * @author <a href="https://github.com/loong10k">Loong Wan</a>\n * @since 1.0.0\n */
 public class MavenClientAutoConfiguration {
 	
 	@Bean
