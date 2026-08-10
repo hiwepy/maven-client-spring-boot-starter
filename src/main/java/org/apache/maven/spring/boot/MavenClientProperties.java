@@ -20,7 +20,7 @@ import org.springframework.cloud.deployer.resource.maven.MavenProperties;
 
 /**
  * Maven Settings
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @ConfigurationProperties(MavenClientProperties.PREFIX)
 public class MavenClientProperties extends MavenProperties {
