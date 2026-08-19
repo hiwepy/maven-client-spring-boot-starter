@@ -21,6 +21,7 @@ import org.springframework.cloud.deployer.resource.maven.MavenProperties;
 /**
  * Maven Settings
  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 1.0.0
  */
 @ConfigurationProperties(MavenClientProperties.PREFIX)
 public class MavenClientProperties extends MavenProperties {
@@ -80,6 +81,10 @@ public class MavenClientProperties extends MavenProperties {
 	 *         {@code false} to resolve the remote metadata normally according to
 	 *         the update policy.
 	 */
+	/**
+	 * <p>Is favor local repository.</p>
+	 * @return the boolean
+	 */
 	public boolean isFavorLocalRepository() {
 		return favorLocalRepository;
 	}
@@ -100,18 +105,28 @@ public class MavenClientProperties extends MavenProperties {
 	public void setFavorLocalRepository(boolean favorLocalRepository) {
 		this.favorLocalRepository = favorLocalRepository;
 	}
+	/**
+	 * <p>Is resolve javadoc.</p>
+	 * @return the boolean
+	 */
 
 	public boolean isResolveJavadoc() {
 		return resolveJavadoc;
 	}
+	/** Sets the resolve javadoc. */
 
 	public void setResolveJavadoc(boolean resolveJavadoc) {
 		this.resolveJavadoc = resolveJavadoc;
 	}
+	/**
+	 * <p>Is resolve sources.</p>
+	 * @return the boolean
+	 */
 
 	public boolean isResolveSources() {
 		return resolveSources;
 	}
+	/** Sets the resolve sources. */
 
 	public void setResolveSources(boolean resolveSources) {
 		this.resolveSources = resolveSources;

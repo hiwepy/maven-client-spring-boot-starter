@@ -92,6 +92,12 @@ import org.springframework.util.StringUtils;
  * 	<p>6、发布本地构件到远程仓库</p>
  * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
+/**
+ * <p>Maven Client Template.</p>
+ *
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 1.0.0
+ */
 public class MavenClientTemplate {
 
 	private Logger log = LoggerFactory.getLogger(RepositorySystemUtils.class);
@@ -651,6 +657,13 @@ public class MavenClientTemplate {
 
 		return this.repositorySystem.resolveMetadata(session, requests);
 	}
+	/**
+	 * <p>Resolve.</p>
+	 * @param file the file
+	 * @return the model
+	 * @throws XmlPullParserException if an error occurs
+	 * @throws IOException if an error occurs
+	 */
 
 	public Model resolve(File file) throws XmlPullParserException, IOException {
 		try (ZipFile zipFile = new ZipFile(file)) {
@@ -815,6 +828,10 @@ public class MavenClientTemplate {
 		}
 		return ArtifactUtils.toResource(resolvedArtifact);
 	}
+	/**
+	 * <p>Validate coordinates.</p>
+	 * @param resource the resource
+	 */
 
 	private void validateCoordinates(MavenResource resource) {
 		Assert.hasText(resource.getGroupId(), "groupId must not be blank.");

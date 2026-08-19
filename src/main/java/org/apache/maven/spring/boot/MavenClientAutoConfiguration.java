@@ -20,12 +20,21 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties({ MavenClientProperties.class })
 /**\n * Auto-configuration for Maven client operations.\n *\n * @author <a href="https://github.com/loong10k">Loong Wan</a>\n * @since 1.0.0\n */
 public class MavenClientAutoConfiguration {
+	/**
+	 * <p>Remote repositories.</p>
+	 * @return the map< string,  remote repository>
+	 */
 	
 	@Bean
 	@ConfigurationProperties("maven.settings.remote-repositories")
 	public  Map<String, RemoteRepository> remoteRepositories(){
 		 return new HashMap<>();
 	};
+	/**
+	 * <p>Maven invoker template.</p>
+	 * @param mavenProperties the maven properties
+	 * @return the maven client template
+	 */
 	
 	
 	@Bean

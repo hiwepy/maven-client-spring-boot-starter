@@ -46,6 +46,7 @@ import org.springframework.cloud.deployer.resource.maven.MavenResource;
  * TODO
  * 
  * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 1.0.0
  */
 public class RepositorySystemUtils {
 
@@ -90,12 +91,22 @@ public class RepositorySystemUtils {
 	 */
 	public static Authentication newAuthentication(final String username, final String password) {
 		return new Authentication() {
+			/**
+			 * <p>Fill.</p>
+			 * @param context the context
+			 * @param key the key
+			 * @param data the data
+			 */
 
 			@Override
 			public void fill(AuthenticationContext context, String key, Map<String, String> data) {
 				context.put(AuthenticationContext.USERNAME, username);
 				context.put(AuthenticationContext.PASSWORD, password);
 			}
+			/**
+			 * <p>Digest.</p>
+			 * @param digest the digest
+			 */
 
 			@Override
 			public void digest(AuthenticationDigest digest) {
@@ -132,6 +143,11 @@ public class RepositorySystemUtils {
 
 		return session;
 	}
+	/**
+	 * <p>Create dependency root.</p>
+	 * @param resource the resource
+	 * @return the static  dependency
+	 */
 
 
 	public static Dependency createDependencyRoot(MavenResource resource) {
